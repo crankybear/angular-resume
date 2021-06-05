@@ -1,0 +1,31 @@
+{
+  "formations": [
+    {
+      "ecole": "OpenClassrooms",
+      "titre": "Développeur Web Junior",
+      "annee": "2018",
+      "competences": [
+        {
+          "back": "PHP",
+          "front": "JS / jQuery",
+          "database": "MySQL"
+        }
+      ]
+    },
+    {
+      "ecole": "IPI Lyon",
+      "titre": "Concepteur Développeur d'Applications Numériques",
+      "annee": "2020",
+      "competences": [
+        {
+          "back": "Java",
+          "front": "Angular",
+          "database": "SQL",
+          "mobile": "Android"
+        }
+      ]
+    }
+  ]
+}
+
+

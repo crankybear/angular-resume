@@ -1,0 +1,18 @@
+{
+  "exp": [
+    {
+      "entreprise": "MDA",
+      "job": "Vendeur",
+      "debut":  "12/2013",
+      "fin": "07/2017",
+      "ville": "Challes-les-Eaux"
+    },
+    {
+      "entreprise": "CGI",
+      "job": "Automaticien Selenium Java",
+      "debut":  "12/2019",
+      "fin": "12/2020",
+      "ville": "Lyon"
+    }
+  ]
+}

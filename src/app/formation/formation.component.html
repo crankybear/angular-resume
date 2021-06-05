@@ -1,0 +1,14 @@
+<h2>Formations</h2>
+<ul *ngFor="let formation of formations">
+  <li><h3>Ecole : {{formation.ecole}}</h3></li>
+  <li>Diplôme : {{formation.titre}}</li>
+  <li>Année : {{formation.annee}}</li>
+  <ul *ngFor="let comp of formation.competences">
+    <li>Back : {{comp.back}}</li>
+    <li>Front : {{comp.front}}</li>
+    <li>Base de données : {{comp.database}}</li>
+    <li *ngIf="comp.mobile">Développement mobile : {{comp.mobile}}</li>
+  </ul>
+</ul>
+
+
