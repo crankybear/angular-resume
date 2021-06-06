@@ -2,6 +2,7 @@ export class Formation {
 
   ecole: string;
   titre: string;
+  niveau: string;
   annee: string;
   competences: string;
   back: string;

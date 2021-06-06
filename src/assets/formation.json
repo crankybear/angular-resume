@@ -1,20 +1,23 @@
 {
   "formations": [
     {
-      "ecole": "OpenClassrooms",
-      "titre": "Développeur Web Junior",
-      "annee": "2018",
+      "ecole": "IPI Lyon",
+      "titre": "Chef de Projet en Ingénierie Logicielle",
+      "niveau": "Bac +5",
+      "annee": "En cours",
       "competences": [
         {
-          "back": "PHP",
-          "front": "JS / jQuery",
-          "database": "MySQL"
+          "back": "Java",
+          "front": "Angular",
+          "database": "SQL",
+          "mobile": "Android"
         }
       ]
     },
     {
       "ecole": "IPI Lyon",
       "titre": "Concepteur Développeur d'Applications Numériques",
+      "niveau": "Bac +3",
       "annee": "2020",
       "competences": [
         {
@@ -22,6 +25,19 @@
           "front": "Angular",
           "database": "SQL",
           "mobile": "Android"
+        }
+      ]
+    },
+    {
+      "ecole": "OpenClassrooms",
+      "titre": "Développeur Web Junior",
+      "niveau": "Bac +2",
+      "annee": "2018",
+      "competences": [
+        {
+          "back": "PHP",
+          "front": "JS / jQuery",
+          "database": "MySQL"
         }
       ]
     }
