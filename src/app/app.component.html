@@ -1,16 +1,18 @@
-<div>
-  <mat-toolbar color="primary">
-    <a mat-button [routerLink]="['/']"><span>Jérémie Bozant</span></a>
-    <div fxShow="true" fxHide.lt-md="true">
-      <a mat-button [routerLink]="['/infos']">Infos</a>
-      <a mat-button [routerLink]="['/formations']">Formations</a>
-      <a mat-button [routerLink]="['/exp']">Expériences</a>
-      <a mat-button [routerLink]="['/softskills']">Intérêts</a>
-    </div>
+<div style="height: 100vh">
+  <mat-toolbar color="primary" class="sticky-top">
+    <mat-toolbar-row>
+      <a mat-button [routerLink]="['/']"><span>Jérémie Bozant</span></a>
+      <div fxShow="true" fxHide.lt-md="true">
+        <a mat-button [routerLink]="['/infos']">Infos</a>
+        <a mat-button [routerLink]="['/formations']">Formations</a>
+        <a mat-button [routerLink]="['/exp']">Expériences</a>
+        <a mat-button [routerLink]="['/softskills']">Intérêts</a>
+      </div>
 
-    <div fxShow="true" fxHide.gt-sm="true">
-      <a href="#" (click)="sidenav.toggle()"><fa-icon [icon]="faBars"></fa-icon></a>
-    </div>
+      <div fxShow="true" fxHide.gt-sm="true">
+        <a href="#" (click)="sidenav.toggle()"><fa-icon [icon]="faBars"></fa-icon></a>
+      </div>
+    </mat-toolbar-row>
   </mat-toolbar>
 
   <mat-sidenav-container fxFlexFill>
@@ -24,19 +26,10 @@
       </div>
     </mat-sidenav>
     <mat-sidenav-content fxFlexFill>
-      <div class="container-fluid">
-        <main>
-          <div class="container-fluid px-4">
-            <div class="row">
-              <div class="col-xl-12 col-md-12">
-                <router-outlet></router-outlet>
-              </div>
-            </div>
-          </div>
-        </main>
-      </div>
+      <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
+
 
 

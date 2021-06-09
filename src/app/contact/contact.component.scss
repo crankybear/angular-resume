@@ -1,2 +1,7 @@
 
-
+.example-header-image {
+  background-size: contain;
+  border-radius: 50%;
+  background: url('../../assets/img/crankybear.png') no-repeat 50% 50%;
+  background-size: 300%;
+}

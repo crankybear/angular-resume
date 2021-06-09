@@ -1,11 +1,15 @@
 <h2>Infos</h2>
-<div *ngFor="let info of infos">
-  <!--<img src="{{info.avatar}}" alt="avatar"/>-->
-      <h3>{{info.prenom}} {{info.nom}}</h3>
-      <cite>Développeur</cite>
-      <p>Date de naissance : {{info.ddn}}</p>
-      <p>Téléphone : {{info.tel}}</p>
-      <p>email : {{info.email}}</p>
-      <p>Adresse : {{info.adresse}}</p>
+<mat-card *ngFor="let info of infos" class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{info.prenom}} {{info.nom}}</mat-card-title>
+    <mat-card-subtitle>Développeur</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>Date de naissance : {{info.ddn}}</p>
+    <p>Téléphone : {{info.tel}}</p>
+    <p>email : {{info.email}}</p>
+    <p>Adresse : {{info.adresse}}</p>
+  </mat-card-content>
+</mat-card>
 
-</div>
