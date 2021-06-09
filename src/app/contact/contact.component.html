@@ -1,11 +1,11 @@
 <h2>Infos</h2>
-<ul *ngFor="let info of infos">
-  <li>Prénom : {{info.prenom}}</li>
-  <li>Nom : {{info.nom}}</li>
-  <li><img src="{{info.avatar}}"/></li>
-  <li>Date de naissance : {{info.ddn}}</li>
-  <li>Téléphone : {{info.tel}}</li>
-  <li>email : {{info.email}}</li>
-  <li>Adresse : {{info.adresse}}</li>
-</ul>
+<div *ngFor="let info of infos">
+  <!--<img src="{{info.avatar}}" alt="avatar"/>-->
+      <h3>{{info.prenom}} {{info.nom}}</h3>
+      <cite>Développeur</cite>
+      <p>Date de naissance : {{info.ddn}}</p>
+      <p>Téléphone : {{info.tel}}</p>
+      <p>email : {{info.email}}</p>
+      <p>Adresse : {{info.adresse}}</p>
 
+</div>

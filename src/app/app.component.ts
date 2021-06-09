@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-
+import {Component} from '@angular/core';
+import {MatSidenav} from '@angular/material/sidenav';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
+  sidenav: MatSidenav;
+  faBars = faBars;
+  faTimes = faTimes;
 }
