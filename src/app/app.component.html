@@ -1,6 +1,6 @@
 <div style="height: 100vh">
-  <mat-toolbar color="primary" class="sticky-top">
-    <mat-toolbar-row>
+  <mat-toolbar color="primary" class="fixed-top">
+
       <a mat-button [routerLink]="['/']"><span>Jérémie Bozant</span></a>
       <div fxShow="true" fxHide.lt-md="true">
         <a mat-button [routerLink]="['/infos']">Infos</a>
@@ -12,7 +12,7 @@
       <div fxShow="true" fxHide.gt-sm="true">
         <a href="#" (click)="sidenav.toggle()"><fa-icon [icon]="faBars"></fa-icon></a>
       </div>
-    </mat-toolbar-row>
+
   </mat-toolbar>
 
   <mat-sidenav-container fxFlexFill>
@@ -26,7 +26,9 @@
       </div>
     </mat-sidenav>
     <mat-sidenav-content fxFlexFill>
+      <div class="container-fluid p-3">
       <router-outlet></router-outlet>
+      </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
