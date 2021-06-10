@@ -1,11 +1,15 @@
 <div class="row">
   <h2>Expériences</h2>
-  <ul *ngFor="let xp of exp" class="col-4">
-    <li><img src="{{xp.logo}}"/></li>
-    <li>Entreprise : {{xp.entreprise}}</li>
-    <li>Poste : {{xp.job}}</li>
-    <li>Date de début : {{xp.debut | date: 'MM/yyyy'}}</li>
-    <li>Date de fin : {{xp.fin | date: 'MM/yyyy'}}</li>
-    <li>Ville : {{xp.ville}}</li>
+  <ul *ngFor="let xp of exp" class="col-md-4">
+    <mat-card>
+      <li fxLayoutAlign="center"><img src="{{xp.logo}}"/></li>
+      <br>
+      <li fxLayoutAlign="center">Entreprise : {{xp.entreprise}}</li>
+      <li fxLayoutAlign="center">Poste : {{xp.job}}</li>
+      <li fxLayoutAlign="center">Date de début : {{xp.debut | date: 'MM/yyyy'}}</li>
+      <li fxLayoutAlign="center">Date de fin : {{xp.fin | date: 'MM/yyyy'}}</li>
+      <li fxLayoutAlign="center">Ville : {{xp.ville}}</li>
+    </mat-card>
   </ul>
 </div>
+<hr>

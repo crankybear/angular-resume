@@ -5,13 +5,15 @@ import {FormationComponent} from './formation/formation.component';
 import {SoftComponent} from './soft/soft.component';
 import {ExpComponent} from './exp/exp.component';
 import {HomeComponent} from './home/home.component';
+import {KeepintouchComponent} from './keepintouch/keepintouch.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'infos', component: ContactComponent},
   {path: 'formations', component: FormationComponent},
   {path: 'softskills', component: SoftComponent},
-  {path: 'exp', component: ExpComponent}
+  {path: 'exp', component: ExpComponent},
+  {path: 'mailme', component: KeepintouchComponent}
 ];
 
 @NgModule({

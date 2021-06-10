@@ -1,0 +1,28 @@
+<form [formGroup]="contactForm" (ngSubmit)="processForm()" fxLayout="column" fxLayoutAlign="center center">
+  <mat-form-field>
+    <mat-label>Prénom</mat-label>
+    <input matInput name="firstname" placeholder="Prénom" formControlName="firstname">
+    <div *ngIf="isSubmitted && f.firstname.errors" class="text-danger">
+      <div *ngIf="f.firstname.errors.required">Saississez un identifiant</div>
+    </div>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Nom</mat-label>
+    <input matInput name="lastname" placeholder="Nom" formControlName="lastname">
+    <div *ngIf="isSubmitted && f.lastname.errors" class="text-danger">
+      <div *ngIf="f.lastname.errors.required">Saississez un identifiant</div>
+    </div>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input matInput name="email" placeholder="pat@example.com" required formControlName="email">
+    <div *ngIf="isSubmitted && f.email.errors" class="text-danger">
+      <div *ngIf="f.email.errors.required">Saississez un identifiant</div>
+    </div>
+  </mat-form-field>
+  <button mat-raised-button color="primary">Valider</button>
+</form>
+
+<div *ngIf="isSubmitted && f.firstname.errors" class="text-danger">
+  <div *ngIf="f.firstname.errors.required">Saississez un identifiant</div>
+</div>

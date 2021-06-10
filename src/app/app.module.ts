@@ -12,7 +12,7 @@ import { FormationComponent } from './formation/formation.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
@@ -21,6 +21,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatListModule} from '@angular/material/list';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatCardModule} from '@angular/material/card';
+import { KeepintouchComponent } from './keepintouch/keepintouch.component';
+import { MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 
 @NgModule({
@@ -30,13 +33,15 @@ import { MatCardModule} from '@angular/material/card';
     ExpComponent,
     SoftComponent,
     FormationComponent,
-    HomeComponent
+    HomeComponent,
+    KeepintouchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    FormsModule,
     FlexLayoutModule,
     MatButtonModule,
     MatIconModule,
@@ -44,7 +49,10 @@ import { MatCardModule} from '@angular/material/card';
     MatSidenavModule,
     MatToolbarModule,
     FontAwesomeModule,
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
