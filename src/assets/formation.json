@@ -2,6 +2,7 @@
   "formations": [
     {
       "ecole": "IPI Lyon",
+      "logo": "assets/img/ipi-logo.jpeg",
       "titre": "Chef de Projet en Ingénierie Logicielle",
       "niveau": "Bac +5",
       "annee": "En cours",
@@ -16,6 +17,7 @@
     },
     {
       "ecole": "IPI Lyon",
+      "logo": "assets/img/ipi-logo.jpeg",
       "titre": "Concepteur Développeur d'Applications Numériques",
       "niveau": "Bac +3",
       "annee": "2020",
@@ -30,6 +32,7 @@
     },
     {
       "ecole": "OpenClassrooms",
+      "logo": "assets/img/oc-logo.jpeg",
       "titre": "Développeur Web Junior",
       "niveau": "Bac +2",
       "annee": "2018",

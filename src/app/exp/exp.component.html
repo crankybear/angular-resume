@@ -1,8 +1,11 @@
-<h1>Expériences</h1>
-<ul *ngFor="let xp of exp">
-  <li>Entreprise : {{xp.entreprise}}</li>
-  <li>Poste : {{xp.job}}</li>
-  <li>Date de début : {{xp.debut}}</li>
-  <li>Date de fin : {{xp.fin}}</li>
-  <li>Ville : {{xp.ville}}</li>
-</ul>
+<div class="row">
+  <h2>Expériences</h2>
+  <ul *ngFor="let xp of exp" class="col-4">
+    <li><img src="{{xp.logo}}"/></li>
+    <li>Entreprise : {{xp.entreprise}}</li>
+    <li>Poste : {{xp.job}}</li>
+    <li>Date de début : {{xp.debut | date: 'MM/yyyy'}}</li>
+    <li>Date de fin : {{xp.fin | date: 'MM/yyyy'}}</li>
+    <li>Ville : {{xp.ville}}</li>
+  </ul>
+</div>

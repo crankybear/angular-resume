@@ -3,23 +3,26 @@
     {
       "entreprise": "Inddigo",
       "job": "Administrateur Développeur Web ERP",
-      "debut": "03/2021",
+      "debut": "2021-03",
       "fin": "Aujourd'hui",
-      "ville": "Chambéry"
+      "ville": "Chambéry",
+      "logo": "assets/img/inddigo-logo.jpeg"
     },
     {
       "entreprise": "CGI",
       "job": "Automaticien Selenium Java",
-      "debut":  "12/2019",
-      "fin": "12/2020",
-      "ville": "Lyon"
+      "debut":  "2019-12",
+      "fin": "2020-12",
+      "ville": "Lyon",
+      "logo": "assets/img/cgi-logo.png"
     },
     {
       "entreprise": "MDA",
       "job": "Vendeur",
-      "debut":  "12/2013",
-      "fin": "07/2017",
-      "ville": "Challes-les-Eaux"
+      "debut":  "2013-12",
+      "fin": "2017-07",
+      "ville": "Challes-les-Eaux",
+      "logo": "assets/img/mda-logo.jpeg"
     }
   ]
 }

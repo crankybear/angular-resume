@@ -1,7 +1,6 @@
 export class Soft {
-  skill1: string;
-  skill2: string;
-  skill3: string;
+  skill: string;
+  logo: string;
 
   constructor(obj?: Partial<Soft>) {
     Object.assign(this, obj);

@@ -1,6 +1,9 @@
-<h2>Centres d'intérêts</h2>
-<div *ngFor="let skill of soft">
-  <p>{{skill.skill1}}</p>
-  <p>{{skill.skill2}}</p>
-  <p>{{skill.skill3}}</p>
+<div class="row">
+  <h2>Centres d'intérêts</h2>
+  <ul *ngFor="let skill of soft" class="col-4">
+    <li><img src="{{skill.logo}}"/></li>
+    <li><p class="col-4">{{skill.skill}}</p></li>
+</ul>
 </div>
+
+

@@ -4,6 +4,7 @@ export class Exp {
   debut: string;
   fin: string;
   ville: string;
+  logo: string;
 
   constructor(obj?: Partial<Exp>) {
     Object.assign(this, obj);

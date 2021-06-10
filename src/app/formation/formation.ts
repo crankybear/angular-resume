@@ -9,6 +9,7 @@ export class Formation {
   front: string;
   database: string;
   mobile: string;
+  logo: string;
 
   constructor(obj?: Partial<Formation>) {
     Object.assign(this, obj);

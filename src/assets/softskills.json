@@ -1,9 +1,16 @@
 {
   "soft": [
     {
-      "skill1": "Kaamelott",
-      "skill2": "Mario Kart",
-      "skill3": "Guitare"
+      "skill": "Kaamelott",
+      "logo": "assets/img/kaamelott-logo.jpeg"
+    },
+    {
+      "skill": "Mario Kart",
+      "logo": "assets/img/mario-kart.jpeg"
+    },
+    {
+      "skill": "Guitare",
+      "logo": "assets/img/guitar.jpeg"
     }
   ]
 }

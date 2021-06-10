@@ -6,10 +6,22 @@
     <mat-card-subtitle>Développeur</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
-    <p>Date de naissance : {{info.ddn}}</p>
-    <p>Téléphone : {{info.tel}}</p>
-    <p>email : {{info.email}}</p>
-    <p>Adresse : {{info.adresse}}</p>
+    <div class="row">
+      <div class="col-6">
+        <p>Date de naissance : {{info.ddn | date:'dd/MM/yyyy'}}</p>
+        <p>Téléphone : {{info.tel}}</p>
+        <p>email : {{info.email}}</p>
+        <p>Adresse : {{info.adresse}}</p>
+      </div>
+      <div class="col-6">
+        <span>Présentation</span>
+        <hr>
+        <p>En reconversion professionnelle depuis 2016, j'ai d'abord effectué une formation de technicien réseau.</p>
+        <p>Je me suis ensuite orienté vers le développement web dans un premier temps, puis logiciel.</p>
+        <p>Je poursuis actuellement mes études en qualité de Chef de Projet en Ingénierie Logicielle.</p>
+        <p>Je pense arrêter le tir là ;)</p>
+      </div>
+    </div>
   </mat-card-content>
 </mat-card>
 
