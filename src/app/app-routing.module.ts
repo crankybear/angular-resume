@@ -1,19 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {ContactComponent} from './contact/contact.component';
-import {FormationComponent} from './formation/formation.component';
-import {SoftComponent} from './soft/soft.component';
-import {ExpComponent} from './exp/exp.component';
 import {HomeComponent} from './home/home.component';
-import {KeepintouchComponent} from './keepintouch/keepintouch.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'infos', component: ContactComponent},
-  {path: 'formations', component: FormationComponent},
-  {path: 'softskills', component: SoftComponent},
-  {path: 'exp', component: ExpComponent},
-  {path: 'mailme', component: KeepintouchComponent}
+  {path: 'infos', loadChildren: () => import('./contact/contact.module').then(module => module.ContactModule)},
+  {path: 'formations', loadChildren: () => import('./formation/formation.module').then(m => m.FormationModule)},
+  {path: 'softskills', loadChildren: () => import('./soft/soft.module').then(m => m.SoftModule)},
+  {path: 'exp', loadChildren: () => import('./exp/exp.module').then(module => module.ExpModule)},
+  {path: 'mailme', loadChildren: () => import('./keepintouch/keepintouch.module').then(module => module.KeepintouchModule)}
 ];
 
 @NgModule({
