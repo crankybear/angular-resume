@@ -1,4 +1,4 @@
-<form [formGroup]="contactForm" (ngSubmit)="processForm()" fxLayout="column" fxLayoutAlign="center center">
+<form [formGroup]="contactForm" (ngSubmit)="onFormSubmit()" fxLayout="column" fxLayoutAlign="center center">
   <mat-form-field>
     <mat-label>Prénom</mat-label>
     <input matInput name="firstname" placeholder="Prénom" formControlName="firstname">

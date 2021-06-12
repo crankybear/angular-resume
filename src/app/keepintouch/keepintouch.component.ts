@@ -15,23 +15,23 @@ export class KeepintouchComponent implements OnInit {
   lastname: string;
   email: FormControl = new FormControl('', [Validators.required, Validators.email]);
 
-  constructor(private formBuilder: FormBuilder, private service: KeepintouchService) { }
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
-    this.formInit();
+    this.onFormInit();
   }
 
-  processForm() {
+  onFormSubmit() {
     this.isSubmitted = true;
     if(this.contactForm.invalid) {
       return;
     } else {
       const formValue = this.contactForm.value;
-      console.log(formValue['firstname']);
+
     }
   }
 
-  formInit() {
+  onFormInit() {
     this.contactForm = this.formBuilder.group({
       firstname: ['', Validators.required],
       lastname: ['', Validators.required],
